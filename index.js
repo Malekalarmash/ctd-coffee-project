@@ -1,6 +1,19 @@
+document.getElementById('hot-coffee-button').addEventListener('click', async function() {
+    try {
+        const resp = await fetch('https://api.sampleapis.com/coffee/hot'); // Await fetch
+        const json = await resp.json(); // Await JSON parsing
+        console.log(json);
+    } catch (err) {
+        console.log('Error:', err.message);
+    }
+});
 
-async function fetchPost() {
-const request = fetch("https://jsonplaceholder.typicode.com/posts/1")
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-}
+document.getElementById('cold-coffee-button').addEventListener('click', async function() {
+    try {
+        const resp = await fetch('https://api.sampleapis.com/coffee/hot'); // Await fetch
+        const json = await resp.json(); // Await JSON parsing
+        console.log(json);
+    } catch (err) {
+        console.log('Error:', err.message);
+    }
+});
