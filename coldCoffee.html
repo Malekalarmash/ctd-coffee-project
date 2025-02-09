@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Cold Coffee Recipes</title>
 </head>
 <body>
@@ -15,14 +16,19 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Cold Coffee Recipes</h2>
-        <p>Click on the recipe to view the ingredients and instructions</p>
-        <button id="cold-coffee-button">Cold Coffee</button>
-        <section id="coffeeContainer" class="card">
-            <!-- Coffee cards will appear here -->
-        </section>
+    <section class="main-container">
+        <div class="cold-coffee">
+            <h2>Cold Coffee Recipes</h2>
+            <button class="coffee-button" id="cold-coffee-button">Load Cold Coffee Recipes</button>    
+        </div>
+            <section id="coffeeContainer">
+                <!-- Coffee cards will appear here -->
+            </section>
+        
     </section>
     <script src="index.js" ></script>
 </body>
+<footer>
+    <p>&copy; 2025 CTD Coffee Project. All rights reserved.</p>
+</footer>
 </html>

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTD Coffee Project</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="./output.css" rel="stylesheet">
+    <title>Cold Coffee Recipes</title>
 </head>
 <body>
     <header>
@@ -17,18 +16,19 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <h3>Welcome to our coffee shop!</h3>
-            <p>Click the button to veiw all the coffee options</p>
-            <button id="hot-coffee-button">Hot Coffee</button>
+    <section class="main-container">
+        <div class="hot-coffee">
+            <h2>Hot Coffee Recipes</h2>
+            <button class="coffee-button" id="hot-coffee-button">Load Hot Coffee Recipes</button>    
+        </div>
+            <section id="coffeeContainer">
+                <!-- Coffee cards will appear here -->
+            </section>
         
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 CTD Coffee Project. All rights reserved.</p>
-    </footer>
+    </section>
     <script src="index.js" ></script>
 </body>
+<footer>
+    <p>&copy; 2025 CTD Coffee Project. All rights reserved.</p>
+</footer>
 </html>

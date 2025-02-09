@@ -48,3 +48,69 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.main-container {
+ margin-bottom: 100px;
+}
+.cold-coffee{
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Card Container */
+#coffeeContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    
+}
+.coffee-card {
+    background-color: white;
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.coffee-image {
+    width: 100px;
+    height: 200px;  /* Fixed height for consistency */
+    object-fit: cover;  /* Ensures image doesn't stretch */
+    border-radius: 8px;  /* Rounded corners for the image */
+}
+
+/* Title Styling */
+.coffee-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Description Styling */
+.coffee-card-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+.coffee-button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/* Hover Effects */
+
+.coffee-card:hover {
+    transform: scale(1.05);  /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Bigger shadow on hover */
+}
